@@ -1127,7 +1127,7 @@ addNiceReachForArea area_ ({ y, x } as summary) =
         Just _ ->
             { summary
                 | x = x
-                , y = { y | min = min y.min 0, max = y.max }
+                , y = { y | min = y.min, max = y.max }
             }
 
 
